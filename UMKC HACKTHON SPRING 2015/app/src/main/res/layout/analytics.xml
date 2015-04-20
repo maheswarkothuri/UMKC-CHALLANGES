@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootanalytics">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Channel id"
+        android:id="@+id/textView"
+
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/channelid"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start Date(YYYY-MM-DD)"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/channelid"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="End Date(YYYY-MM-DD)"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/startdate"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Metrics"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/enddate"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Execute"
+        android:id="@+id/execute"
+        android:layout_centerHorizontal="true"
+ android:layout_alignParentBottom="true"
+        android:layout_marginTop="93dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startdate"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enddate"
+        android:layout_below="@+id/textView3"
+        android:layout_toStartOf="@+id/channelid"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/metrics"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Results:"
+        android:id="@+id/results"
+
+
+        android:layout_below="@+id/metrics"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/execute" />
+
+</RelativeLayout>

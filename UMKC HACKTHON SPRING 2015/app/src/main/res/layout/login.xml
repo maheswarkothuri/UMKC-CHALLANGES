@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent" >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Again"
+        android:id="@+id/netcheck"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/profilepic"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="There is no internet connection right now"
+        android:id="@+id/displaytext"
+        android:visibility="invisible"
+        android:layout_above="@+id/netcheck"
+
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/profilepic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:fontFamily="Segoe UI"
+        android:textSize="30sp"
+        android:id="@+id/mailname"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profilepic"
+
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login_login"
+        android:layout_marginBottom="35dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/netcheck"
+        android:layout_toEndOf="@+id/netcheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:fontFamily="Segoe UI"
+        android:textSize="25sp"
+        android:id="@+id/gender"
+        android:layout_below="@+id/mailname"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:fontFamily="Segoe UI"
+        android:textSize="25sp"
+        android:id="@+id/locale"
+        android:layout_alignBottom="@+id/gender"
+        android:layout_alignLeft="@+id/mailname"
+        android:layout_alignStart="@+id/mailname" />
+
+
+</RelativeLayout>
