@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UMKCHackthon</string>
+
+
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="refused_message">Looks like you refused our application. This is where we part ways </string>
+    <string name="title_activity_oauth">OAuthActivity</string>
+    <string name="title_ativity_auth">AuthActivity</string>
+    <string name="title_activity_refusal">Refused Access</string>
+    <string name="rowtitle">Title</string>
+    <string name="searchView">Search View</string>
+    <string name="player">Player Activity</string>
+    <string name="token">Access Token retrieved. See your LogCat.</string>
+</resources>
