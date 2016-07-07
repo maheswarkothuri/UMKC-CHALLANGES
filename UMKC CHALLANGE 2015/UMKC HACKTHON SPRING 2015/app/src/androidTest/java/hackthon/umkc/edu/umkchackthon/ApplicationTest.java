@@ -10,6 +10,6 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     public ApplicationTest() {
         super(Application.class);
         
-        //Slave Branch Tewst
+        //Slave Branch Test2
     }
 }
